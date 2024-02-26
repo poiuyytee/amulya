@@ -1,5 +1,5 @@
-Name: M. Byula                                                                                        
-Pino: HU21CSEN0500190
+Name: M. Amulya                                                                                       
+Pino: HU21CSEN0500091
 Experiment-1                                            
 Date:18-07-23
 1.	Revisit/Refresh the study of Python.
