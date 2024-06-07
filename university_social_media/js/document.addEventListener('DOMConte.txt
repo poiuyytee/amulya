@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Example of adding interactivity
+    const likeButtons = document.querySelectorAll('.like-button');
+    likeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('You liked this post!');
+        });
+    });
+
+    // Real-time messaging example (simple simulation)
+    const messageForm = document.getElementById('message-form');
+    if (messageForm) {
+        messageForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messageInput = document.getElementById('message-input');
+            const messagesContainer = document.getElementById('messages-container');
+            const newMessage = document.createElement('div');
+            newMessage.classList.add('message');
+            newMessage.textContent = messageInput.value;
+            messagesContainer.appendChild(newMessage);
+            messageInput.value = '';
+        });
+    }
+});
